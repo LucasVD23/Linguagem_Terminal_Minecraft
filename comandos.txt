@@ -1,0 +1,2 @@
+Lista de comandos a serem implementados: 
+ - summon,give,kill, gamemode, time set, weather,tp,difficulty 
