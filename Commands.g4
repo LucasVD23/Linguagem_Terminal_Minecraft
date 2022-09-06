@@ -15,11 +15,11 @@ WS  					:   ( ' ' | '\t' | '\r' | '\n') -> skip;
 // Parser
 
 program:
-  (cmd)* EOF;
+  ('/'cmd)* EOF;
 
-cmd: '/' summon | give | kill;
+cmd:  summon | give | kill;
 
-summon: 'summon' NAME 'Player'|type_mob;
+summon: 'summon' NAME (type_mob|'Player');
 
 type_mob: 'Creeper'|'Skeleton'| 'Spider'| 'Slime' | 'Enderman'| 'Zombie';
 

@@ -1,4 +1,4 @@
-# Generated from Commands.g4 by ANTLR 4.10.1
+# Generated from Commands.g4 by ANTLR 4.11.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,27 +10,27 @@ else:
 
 def serializedATN():
     return [
-        4,1,30,65,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
-        6,2,7,7,7,1,0,5,0,18,8,0,10,0,12,0,21,9,0,1,0,1,0,1,1,1,1,1,1,1,
-        1,3,1,29,8,1,1,2,1,2,1,2,3,2,34,8,2,1,2,3,2,37,8,2,1,3,1,3,1,4,1,
-        4,1,4,1,4,1,4,1,5,3,5,47,8,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,
-        3,5,58,8,5,1,6,1,6,1,7,1,7,1,7,1,7,0,0,8,0,2,4,6,8,10,12,14,0,2,
-        1,0,4,9,1,0,20,24,70,0,19,1,0,0,0,2,28,1,0,0,0,4,36,1,0,0,0,6,38,
-        1,0,0,0,8,40,1,0,0,0,10,57,1,0,0,0,12,59,1,0,0,0,14,61,1,0,0,0,16,
-        18,3,2,1,0,17,16,1,0,0,0,18,21,1,0,0,0,19,17,1,0,0,0,19,20,1,0,0,
-        0,20,22,1,0,0,0,21,19,1,0,0,0,22,23,5,0,0,1,23,1,1,0,0,0,24,25,5,
-        1,0,0,25,29,3,4,2,0,26,29,3,8,4,0,27,29,3,14,7,0,28,24,1,0,0,0,28,
-        26,1,0,0,0,28,27,1,0,0,0,29,3,1,0,0,0,30,31,5,2,0,0,31,33,5,28,0,
-        0,32,34,5,3,0,0,33,32,1,0,0,0,33,34,1,0,0,0,34,37,1,0,0,0,35,37,
-        3,6,3,0,36,30,1,0,0,0,36,35,1,0,0,0,37,5,1,0,0,0,38,39,7,0,0,0,39,
-        7,1,0,0,0,40,41,5,10,0,0,41,42,5,28,0,0,42,43,3,10,5,0,43,44,5,26,
-        0,0,44,9,1,0,0,0,45,47,3,12,6,0,46,45,1,0,0,0,46,47,1,0,0,0,47,48,
-        1,0,0,0,48,58,5,11,0,0,49,58,5,12,0,0,50,58,5,13,0,0,51,58,5,14,
-        0,0,52,58,5,15,0,0,53,58,5,16,0,0,54,58,5,17,0,0,55,58,5,18,0,0,
-        56,58,5,19,0,0,57,46,1,0,0,0,57,49,1,0,0,0,57,50,1,0,0,0,57,51,1,
-        0,0,0,57,52,1,0,0,0,57,53,1,0,0,0,57,54,1,0,0,0,57,55,1,0,0,0,57,
-        56,1,0,0,0,58,11,1,0,0,0,59,60,7,1,0,0,60,13,1,0,0,0,61,62,5,25,
-        0,0,62,63,5,28,0,0,63,15,1,0,0,0,6,19,28,33,36,46,57
+        4,1,30,63,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,1,0,1,0,5,0,19,8,0,10,0,12,0,22,9,0,1,0,1,0,1,1,1,1,1,
+        1,3,1,29,8,1,1,2,1,2,1,2,1,2,3,2,35,8,2,1,3,1,3,1,4,1,4,1,4,1,4,
+        1,4,1,5,3,5,45,8,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,3,5,56,8,
+        5,1,6,1,6,1,7,1,7,1,7,1,7,0,0,8,0,2,4,6,8,10,12,14,0,2,1,0,4,9,1,
+        0,20,24,67,0,20,1,0,0,0,2,28,1,0,0,0,4,30,1,0,0,0,6,36,1,0,0,0,8,
+        38,1,0,0,0,10,55,1,0,0,0,12,57,1,0,0,0,14,59,1,0,0,0,16,17,5,1,0,
+        0,17,19,3,2,1,0,18,16,1,0,0,0,19,22,1,0,0,0,20,18,1,0,0,0,20,21,
+        1,0,0,0,21,23,1,0,0,0,22,20,1,0,0,0,23,24,5,0,0,1,24,1,1,0,0,0,25,
+        29,3,4,2,0,26,29,3,8,4,0,27,29,3,14,7,0,28,25,1,0,0,0,28,26,1,0,
+        0,0,28,27,1,0,0,0,29,3,1,0,0,0,30,31,5,2,0,0,31,34,5,28,0,0,32,35,
+        3,6,3,0,33,35,5,3,0,0,34,32,1,0,0,0,34,33,1,0,0,0,35,5,1,0,0,0,36,
+        37,7,0,0,0,37,7,1,0,0,0,38,39,5,10,0,0,39,40,5,28,0,0,40,41,3,10,
+        5,0,41,42,5,26,0,0,42,9,1,0,0,0,43,45,3,12,6,0,44,43,1,0,0,0,44,
+        45,1,0,0,0,45,46,1,0,0,0,46,56,5,11,0,0,47,56,5,12,0,0,48,56,5,13,
+        0,0,49,56,5,14,0,0,50,56,5,15,0,0,51,56,5,16,0,0,52,56,5,17,0,0,
+        53,56,5,18,0,0,54,56,5,19,0,0,55,44,1,0,0,0,55,47,1,0,0,0,55,48,
+        1,0,0,0,55,49,1,0,0,0,55,50,1,0,0,0,55,51,1,0,0,0,55,52,1,0,0,0,
+        55,53,1,0,0,0,55,54,1,0,0,0,56,11,1,0,0,0,57,58,7,1,0,0,58,13,1,
+        0,0,0,59,60,5,25,0,0,60,61,5,28,0,0,61,15,1,0,0,0,5,20,28,34,44,
+        55
     ]
 
 class CommandsParser ( Parser ):
@@ -105,7 +105,7 @@ class CommandsParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.10.1")
+        self.checkVersion("4.11.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -150,17 +150,19 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 19
+            self.state = 20
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CommandsParser.T__0) | (1 << CommandsParser.T__9) | (1 << CommandsParser.T__24))) != 0):
+            while _la==1:
                 self.state = 16
+                self.match(CommandsParser.T__0)
+                self.state = 17
                 self.cmd()
-                self.state = 21
+                self.state = 22
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 22
+            self.state = 23
             self.match(CommandsParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -212,19 +214,17 @@ class CommandsParser ( Parser ):
             self.state = 28
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [CommandsParser.T__0]:
+            if token in [2]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 24
-                self.match(CommandsParser.T__0)
                 self.state = 25
                 self.summon()
                 pass
-            elif token in [CommandsParser.T__9]:
+            elif token in [10]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 26
                 self.give()
                 pass
-            elif token in [CommandsParser.T__24]:
+            elif token in [25]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 27
                 self.kill()
@@ -273,30 +273,22 @@ class CommandsParser ( Parser ):
 
         localctx = CommandsParser.SummonContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_summon)
-        self._la = 0 # Token type
         try:
-            self.state = 36
+            self.enterOuterAlt(localctx, 1)
+            self.state = 30
+            self.match(CommandsParser.T__1)
+            self.state = 31
+            self.match(CommandsParser.NAME)
+            self.state = 34
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [CommandsParser.T__1]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 30
-                self.match(CommandsParser.T__1)
-                self.state = 31
-                self.match(CommandsParser.NAME)
-                self.state = 33
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==CommandsParser.T__2:
-                    self.state = 32
-                    self.match(CommandsParser.T__2)
-
-
-                pass
-            elif token in [CommandsParser.T__3, CommandsParser.T__4, CommandsParser.T__5, CommandsParser.T__6, CommandsParser.T__7, CommandsParser.T__8]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 35
+            if token in [4, 5, 6, 7, 8, 9]:
+                self.state = 32
                 self.type_mob()
+                pass
+            elif token in [3]:
+                self.state = 33
+                self.match(CommandsParser.T__2)
                 pass
             else:
                 raise NoViableAltException(self)
@@ -339,9 +331,9 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 38
+            self.state = 36
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CommandsParser.T__3) | (1 << CommandsParser.T__4) | (1 << CommandsParser.T__5) | (1 << CommandsParser.T__6) | (1 << CommandsParser.T__7) | (1 << CommandsParser.T__8))) != 0)):
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 1008) != 0):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -392,13 +384,13 @@ class CommandsParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_give)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 40
+            self.state = 38
             self.match(CommandsParser.T__9)
-            self.state = 41
+            self.state = 39
             self.match(CommandsParser.NAME)
-            self.state = 42
+            self.state = 40
             self.item()
-            self.state = 43
+            self.state = 41
             self.match(CommandsParser.NUM_INT)
         except RecognitionException as re:
             localctx.exception = re
@@ -440,60 +432,60 @@ class CommandsParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_item)
         self._la = 0 # Token type
         try:
-            self.state = 57
+            self.state = 55
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [CommandsParser.T__10, CommandsParser.T__19, CommandsParser.T__20, CommandsParser.T__21, CommandsParser.T__22, CommandsParser.T__23]:
+            if token in [11, 20, 21, 22, 23, 24]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 46
+                self.state = 44
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CommandsParser.T__19) | (1 << CommandsParser.T__20) | (1 << CommandsParser.T__21) | (1 << CommandsParser.T__22) | (1 << CommandsParser.T__23))) != 0):
-                    self.state = 45
+                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 32505856) != 0:
+                    self.state = 43
                     self.item_material()
 
 
-                self.state = 48
+                self.state = 46
                 self.match(CommandsParser.T__10)
                 pass
-            elif token in [CommandsParser.T__11]:
+            elif token in [12]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 49
+                self.state = 47
                 self.match(CommandsParser.T__11)
                 pass
-            elif token in [CommandsParser.T__12]:
+            elif token in [13]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 50
+                self.state = 48
                 self.match(CommandsParser.T__12)
                 pass
-            elif token in [CommandsParser.T__13]:
+            elif token in [14]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 51
+                self.state = 49
                 self.match(CommandsParser.T__13)
                 pass
-            elif token in [CommandsParser.T__14]:
+            elif token in [15]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 52
+                self.state = 50
                 self.match(CommandsParser.T__14)
                 pass
-            elif token in [CommandsParser.T__15]:
+            elif token in [16]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 53
+                self.state = 51
                 self.match(CommandsParser.T__15)
                 pass
-            elif token in [CommandsParser.T__16]:
+            elif token in [17]:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 54
+                self.state = 52
                 self.match(CommandsParser.T__16)
                 pass
-            elif token in [CommandsParser.T__17]:
+            elif token in [18]:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 55
+                self.state = 53
                 self.match(CommandsParser.T__17)
                 pass
-            elif token in [CommandsParser.T__18]:
+            elif token in [19]:
                 self.enterOuterAlt(localctx, 9)
-                self.state = 56
+                self.state = 54
                 self.match(CommandsParser.T__18)
                 pass
             else:
@@ -537,9 +529,9 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 59
+            self.state = 57
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CommandsParser.T__19) | (1 << CommandsParser.T__20) | (1 << CommandsParser.T__21) | (1 << CommandsParser.T__22) | (1 << CommandsParser.T__23))) != 0)):
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 32505856) != 0):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -583,9 +575,9 @@ class CommandsParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_kill)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 61
+            self.state = 59
             self.match(CommandsParser.T__24)
-            self.state = 62
+            self.state = 60
             self.match(CommandsParser.NAME)
         except RecognitionException as re:
             localctx.exception = re

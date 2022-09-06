@@ -1,3 +1,2 @@
-/summon player1 
-/summon mob1 Skeleton
+/summon mob1 Creeper
 /kill player1
