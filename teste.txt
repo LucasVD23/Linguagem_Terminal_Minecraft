@@ -1,2 +1,2 @@
-/summon mob1 Creeper
-/kill player1
+/summon player Player
+/give player Wooden Sword 64 

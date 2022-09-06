@@ -1,8 +1,9 @@
 import sys
 from antlr4 import *
 from antlr4.tree.Tree import TerminalNodeImpl
-from CommandsLexer import CommandsLexer
-from CommandsParser import CommandsParser
+from visitor import Visitor
+from visitorFiles.CommandsLexer import CommandsLexer
+from visitorFiles.CommandsParser import CommandsParser
 
 
 def traverse(tree, rule_names, indent = 0):
@@ -22,6 +23,10 @@ def main(argv):
 
     parser = CommandsParser(stream)
     tree = parser.program()
+    visitor = Visitor()
+    output = visitor.visit(tree)
+
+    print('Fim da Compilação')
     #traverse(tree, parser.ruleNames)
 
 if __name__ == '__main__':

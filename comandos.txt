@@ -1,2 +1,37 @@
 Lista de comandos a serem implementados: 
  - summon,give,kill, gamemode, time set, weather,tp,difficulty 
+
+ Verificações semanticas:
+    - give tem que ser pra player
+    - gamemode tem que estar entre 0 e 3
+    - time set tem que estar dentro de um intervalo
+    - alguns itens não tem material
+
+
+Tabelo de Simbolos:
+   Entidades[]
+
+    
+Entidades: 
+   -Players 
+   -Mob
+
+-Players:
+   nome:
+   inventario :
+
+-Mobs:
+   nome:
+
+inventario
+  limit: 36
+  dict {nome:}
+
+
+
+  /summmon player1 Player
+  
+-cadastrar classe Player com nome player1
+
+/summon mob1 Creeper
+-verifica entrou type_mob ->  cadastra class mob com tipo creeper
