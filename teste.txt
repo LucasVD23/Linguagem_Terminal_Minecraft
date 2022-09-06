@@ -1,2 +1,2 @@
 /summon player Player
-/give player Wooden Sword 64 
+/gamemode 9

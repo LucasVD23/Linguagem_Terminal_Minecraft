@@ -17,8 +17,8 @@ class Visitor(CommandsVisitor):
             return self.visitGive(ctx.give())
         elif (ctx.kill() is not None):
             return self.visitKill(ctx.kill())
-        # elif(ctx.gamemode() is not None):
-        #     return self.visitGamemode(ctx.gamemode())
+        elif(ctx.gamemode() is not None):
+            return self.visitGamemode(ctx.gamemode())
         # elif (ctx.time_set() is not None):
         #     return self.visitTime_set(ctx.time_set())
         # elif (ctx.weather() is not None):
@@ -60,3 +60,6 @@ class Visitor(CommandsVisitor):
         self.entities_table.kill_entity(name)
 
         return None
+    def visitGamemode(self, ctx:CommandsParser.GamemodeContext):
+        if(int(ctx.NUM_INT().getText()) < 0 or int(ctx.NUM_INT().getText())>3):
+            raise Exception('Invalid value for gamemode, type 0 for survival, 1  for creative, 2 for adventure or 3 for spectator')
