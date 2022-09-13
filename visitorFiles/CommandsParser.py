@@ -42,7 +42,7 @@ def serializedATN():
         86,89,5,28,0,0,87,90,3,20,10,0,88,90,5,48,0,0,89,87,1,0,0,0,89,88,
         1,0,0,0,90,19,1,0,0,0,91,92,7,3,0,0,92,21,1,0,0,0,93,94,5,37,0,0,
         94,95,3,24,12,0,95,23,1,0,0,0,96,97,7,4,0,0,97,25,1,0,0,0,98,99,
-        5,42,0,0,99,100,5,50,0,0,100,101,5,48,0,0,101,102,5,48,0,0,102,103,
+        5,42,0,0,99,100,7,1,0,0,100,101,5,48,0,0,101,102,5,48,0,0,102,103,
         5,48,0,0,103,27,1,0,0,0,104,105,5,43,0,0,105,106,3,30,15,0,106,29,
         1,0,0,0,107,108,7,5,0,0,108,31,1,0,0,0,6,36,49,55,65,76,89
     ]
@@ -1014,14 +1014,14 @@ class CommandsParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def NAME(self):
-            return self.getToken(CommandsParser.NAME, 0)
-
         def NUM_INT(self, i:int=None):
             if i is None:
                 return self.getTokens(CommandsParser.NUM_INT)
             else:
                 return self.getToken(CommandsParser.NUM_INT, i)
+
+        def NAME(self):
+            return self.getToken(CommandsParser.NAME, 0)
 
         def getRuleIndex(self):
             return CommandsParser.RULE_tp
@@ -1047,12 +1047,18 @@ class CommandsParser ( Parser ):
 
         localctx = CommandsParser.TpContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_tp)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 98
             self.match(CommandsParser.T__41)
             self.state = 99
-            self.match(CommandsParser.NAME)
+            _la = self._input.LA(1)
+            if not(_la==11 or _la==50):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
             self.state = 100
             self.match(CommandsParser.NUM_INT)
             self.state = 101

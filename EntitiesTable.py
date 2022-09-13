@@ -7,6 +7,9 @@ class EntitiesTable:
             self.entities[entity.name] = entity
         else:
             raise Exception("Entity identifier " + entity.name + " already being used")
+
+    def get_all_players(self):
+        return [self.entities[entity] for entity in self.entities if(isinstance(self.entities[entity],Player))]
         
     def verify_entity_exists(self, name_key):
         return name_key in self.entities
@@ -17,15 +20,17 @@ class EntitiesTable:
         else:
             raise Exception("Entity " +  name + " doesn't exist")
         
-class Entidade:
+class Entity:
     def __init__(self, name):
         self.name = name
+        
+    
 
-class Mob(Entidade):
+class Mob(Entity):
     def __init__(self, name):
         super().__init__(name)
 
-class Player(Entidade):
+class Player(Entity):
     def __init__(self, name):
         super().__init__(name)        
         #self.inventario = {}
@@ -39,4 +44,7 @@ class Player(Entidade):
             self.quant_items += num_items
         else: 
             raise Exception("Not enough space in Player " + self.name + "'s inventory")
+        
+    def __str__(self):
+        return f'{self.name}'
     

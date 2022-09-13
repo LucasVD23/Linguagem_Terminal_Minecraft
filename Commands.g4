@@ -1,7 +1,7 @@
 grammar Commands;
 
 // Lexer
-NUM_INT 				: ('0'..'9')+;
+NUM_INT 				: ('-')?('0'..'9')+;
 NUM_REAL				: ('0'..'9')+ ('.' ('0'..'9')+)?;
 
 NAME					: ('a'..'z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*;
@@ -41,7 +41,7 @@ weather: 'weather' weather_type;
 
 weather_type: 'clear' | 'rain' | 'snow' | 'thunder';
 
-tp: 'tp' NAME NUM_INT NUM_INT NUM_INT;
+tp: 'tp' (NAME|'@a') NUM_INT NUM_INT NUM_INT;
 
 difficulty: 'difficulty' difficulty_level;
 

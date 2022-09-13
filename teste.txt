@@ -1,2 +1,10 @@
-/summon player Player
-/gamemode 9
+/summon player1 Player
+/summon player2 Player
+/summon mob1 Skeleton
+/give player1 Wooden Sword 3
+/gamemode 2
+/weather clear
+/time set day
+/kill player1
+/tp player1 2 2 2 
+/difficulty peaceful
