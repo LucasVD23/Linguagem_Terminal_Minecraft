@@ -34,3 +34,7 @@ Vá a pasta do projeto e ative o venv
 ```
  source .venv/bin/activate
 ```
+Instale o antlr4
+```
+ pip install antlr4-python3-runtime
+```
