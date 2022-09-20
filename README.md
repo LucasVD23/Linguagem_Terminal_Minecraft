@@ -9,14 +9,14 @@
 - Lucas Vinícius Domingues 769699
 - Rafael Yoshio Yamawaki Murata 769681
 
-##Dependencias
+## Dependencias
 
 - Python 3
 - Atlr4
 - Venv
 
 
-##Ubuntu
+## Ubuntu
 
 É necessário instalar o pip:
 
