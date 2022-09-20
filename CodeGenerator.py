@@ -1,7 +1,10 @@
+from html import entities
 from antlr4 import *
 from EntitiesTable import EntitiesTable,Player,Mob
 from visitorFiles.CommandsParser import CommandsParser
 from visitorFiles.CommandsVisitor import CommandsVisitor
+
+entities_table = EntitiesTable()
 
 class CodeGenerator(CommandsVisitor):
     saida = ""
@@ -35,11 +38,17 @@ class CodeGenerator(CommandsVisitor):
         if('Player' in ctx.getText()):
             self.saida += f'{name} = Player("{name}")\n'+\
             f"print('Summoned new Player')\n"
+            new_ent = Player(name)
+            print('Summoned new Player')
+        
             
         else:
             self.saida += f'{name} = Mob("{name}")\n'+\
                 f'print("Summoned new {ctx.mob_type().getText()}")\n'
+            new_ent =  Mob(name)
+            print(f"Summoned new {ctx.mob_type().getText()}")
         self.saida += f'entities_table.add_entity({name})\n\n'
+        entities_table.add_entity(new_ent)
         return None
 
     def visitGive(self, ctx: CommandsParser.GiveContext):
@@ -47,20 +56,26 @@ class CodeGenerator(CommandsVisitor):
             self.saida += f"players = entities_table.get_all_players()\n"+\
             f"for player in players:\n\t" +\
             f"print('Given [{ctx.item().getText()}] * {ctx.NUM_INT().getText()} to ' + player.name)\n"
+            players = entities_table.get_all_players()
+            for player in players:
+                print(f"Given [{ctx.item().getText()}] * {ctx.NUM_INT().getText()} to "+ player.name)
         else:
             self.saida += f"print('Given [{ctx.item().getText()}] * {ctx.NUM_INT().getText()} to {ctx.NAME().getText()}')\n"  
-        
+            print(f"Given [{ctx.item().getText()}] * {ctx.NUM_INT().getText()} to {ctx.NAME().getText()}")
         return None
     
     def visitKill(self, ctx: CommandsParser.KillContext):
         name = ctx.NAME().getText()
         self.saida += f"entities_table.kill_entity({name}.name)\n" +\
         f"print('Killed ' + {name}.name)\n"
+        entities_table.kill_entity(name)
+        print(f"Killed {name}")
         return None
     
     def visitGamemode(self, ctx: CommandsParser.GamemodeContext):
         gamemode = {'0':'Survival','1':'Creative', '2':'Adventure', '3':'Spectator' }
         self.saida += f"print('Your game mode has been updated to {gamemode[ctx.NUM_INT().getText()]} Mode')\n"
+        print(f"Your game mode has been updated to {gamemode[ctx.NUM_INT().getText()]} Mode")
         return None
         
     def visitTime_set(self, ctx: CommandsParser.Time_setContext):
@@ -78,20 +93,25 @@ class CodeGenerator(CommandsVisitor):
         
         if (ctx.time_string() is not None):
             self.saida += f'print("Set the time to {time_dict[ctx.time_string().getText()]}")\n'
+            print(f"Set the time to {time_dict[ctx.time_string().getText()]}")
         else:
             self.saida += f'print("Set the time to {ctx.NUM_INT().getText()}")\n'
+            print(f"Set the time to {ctx.NUM_INT().getText()}")
         return None
     
     def visitWeather(self, ctx: CommandsParser.WeatherContext):
         self.saida += f'print("Changing to {ctx.weather_type().getText()} weather")\n'
+        print(f"Changing to {ctx.weather_type().getText()} weather")
         return super().visitWeather(ctx)
         
     def visitTp(self, ctx: CommandsParser.TpContext):
         player = ctx.NAME().getText()
         positions = ctx.NUM_INT()
         self.saida+= f"print('Teleported {player} to {positions[0].getText()}, {positions[1].getText()}, {positions[2].getText()}')\n"  
+        print(f"Teleported {player} to {positions[0].getText()}, {positions[1].getText()}, {positions[2].getText()}")
         return None
     
     def visitDifficulty(self, ctx: CommandsParser.DifficultyContext):
         self.saida += f'print("Set game difficulty to {ctx.difficulty_level().getText()}")\n'
+        print(f"Set game difficulty to {ctx.difficulty_level().getText()}")
         return None

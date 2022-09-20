@@ -14,9 +14,7 @@ mob1 = Mob("mob1")
 print("Summoned new Skeleton")
 entities_table.add_entity(mob1)
 
-players = entities_table.get_all_players()
-for player in players:
-	print('Given [WoodenSword] * 3 to ' + player.name)
+print('Given [WoodenSword] * 3 to player1')
 print('Your game mode has been updated to Adventure Mode')
 print("Changing to clear weather")
 print("Set the time to 1000")
