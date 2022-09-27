@@ -33,32 +33,61 @@ Os horários pré-defindos são: day (7:00am ou 10000) , noon/midday (12:00pm ou
 - Difficulty muda a dificuldade, as dificuldades disponíveis são: peaceful, easy, normal e hard.
 
 
-## Dependencias
+## Dependências
 
+- Java
 - Python 3
-- Atlr4
+- Pip
 - Venv
+- Antlr4
 
 
 ## Ubuntu
 
-É necessário instalar o pip:
+Crie um novo ambiente virtual na raiz do projeto
 
 ```
- sudo apt-get install python3-pip
-```
-Instale o venv:
-
-```
- sudo pip3 install virtualenv
+ virtualenv .venv
 ```
 
-Vá a pasta do projeto e ative o venv
+Ainda na raiz do projeto, abra um novo terminal e ative o novo ambiente criado utilizando
 
 ```
  source .venv/bin/activate
 ```
-Instale o antlr4
+
+Instale o arquivo de dependências no ambiente
 ```
- pip install antlr4-python3-runtime
+ pip install -r requirements.txt
 ```
+
+
+## Windows
+Crie um novo ambiente virtual na raiz do projeto
+
+```
+ virtualenv .venv
+```
+Ainda na raiz do projeto, abra um novo terminal e ative o novo ambiente criado utilizando
+
+```
+ .venv/Scripts/activate
+```
+
+Instale o arquivo de dependências no ambiente
+```
+ pip install -r requirements.txt
+```
+
+Baixe a [versão 4.11.1 do antlr](https://www.antlr.org/download.html)
+
+Compile o arquivo ```Commands.g4```
+```
+ java -jar <caminho para o antlr-4.11.1-complete.jar> -Dlanguage=Python3 Commands.g4 -visitor -o visitorFiles
+```
+
+Execute o arquivo principal
+```
+ python main.py teste.txt
+```
+
