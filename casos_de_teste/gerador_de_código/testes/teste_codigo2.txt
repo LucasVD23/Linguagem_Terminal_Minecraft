@@ -1,0 +1,8 @@
+/summon player1 Player
+/summon player2 Player
+/summon player3 Player
+/summon mob1 Skeleton
+/kill player2
+/give @a Stone Pickaxe 23
+/summon player2 
+/tp player2 921 21 333

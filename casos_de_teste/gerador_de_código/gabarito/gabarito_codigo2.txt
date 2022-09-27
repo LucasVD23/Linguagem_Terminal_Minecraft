@@ -1,0 +1,10 @@
+Summoned new Player
+Summoned new Player
+Summoned new Player
+Summoned new Skeleton
+Killed player2
+Given [StonePickaxe] * 23 to player1
+Given [StonePickaxe] * 23 to player3
+Summoned new Player
+Teleported player2 to 921, 21, 333
+Fim da Compilação

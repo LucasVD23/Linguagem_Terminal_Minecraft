@@ -1,0 +1,9 @@
+/summon p1 Player
+/time set 15000
+/gamemode 1
+/weather snow 
+/difficulty easy
+/give p1 Wooden Axe 2
+/kill p1 
+/summon end1 Enderman
+/kill end1

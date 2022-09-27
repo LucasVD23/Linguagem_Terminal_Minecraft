@@ -73,7 +73,7 @@ class Visitor(CommandsVisitor):
     def visitTime_set(self, ctx: CommandsParser.Time_setContext):
         if(ctx.NUM_INT() is not None):
             num_val = int(ctx.NUM_INT().getText())
-            if(num_val > 2300 or num_val < 0):
+            if(num_val > 23000 or num_val < 0):
                 raise Exception('Invalid  timestamp, timestamp must be between 0 and 23000')
         return None
         
