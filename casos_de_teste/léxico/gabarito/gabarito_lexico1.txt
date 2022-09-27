@@ -1,4 +1,3 @@
 line 2:0 mismatched input '/' expecting {'Player', 'Creeper', 'Skeleton', 'Spider', 'Slime', 'Enderman', 'Zombie'}
 line 2:13 token recognition error at: 'M'
 line 2:14 mismatched input 'ob' expecting {'Player', 'Creeper', 'Skeleton', 'Spider', 'Slime', 'Enderman', 'Zombie'}
-AttributeError: 'NoneType' object has no attribute 'getText'

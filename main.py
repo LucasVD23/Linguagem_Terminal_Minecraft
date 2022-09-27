@@ -21,10 +21,11 @@ def main(argv):
     stream = CommonTokenStream(lexer)
     parser = CommandsParser(stream)
     tree = parser.program()
-    visitor = Visitor()
-    visitor.visit(tree)
 
     if(parser.getNumberOfSyntaxErrors() == 0): 
+        visitor = Visitor()
+        visitor.visit(tree)
+
             
         print('Fim da Compilação')
         gerador = CodeGenerator()
