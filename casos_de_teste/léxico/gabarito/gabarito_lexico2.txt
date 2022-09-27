@@ -1,0 +1,3 @@
+line 1:16 mismatched input 'player' expecting {'Player', 'Creeper', 'Skeleton', 'Spider', 'Slime', 'Enderman', 'Zombie'}
+line 3:26 missing NUM_INT at '<EOF>'
+ValueError: invalid literal for int() with base 10: '<missing NUM_INT>'

@@ -1,0 +1,2 @@
+/summon player
+/summon mob1 Mob

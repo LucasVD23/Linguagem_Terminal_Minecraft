@@ -42,8 +42,8 @@ def serializedATN():
         86,89,5,28,0,0,87,90,3,20,10,0,88,90,5,48,0,0,89,87,1,0,0,0,89,88,
         1,0,0,0,90,19,1,0,0,0,91,92,7,3,0,0,92,21,1,0,0,0,93,94,5,37,0,0,
         94,95,3,24,12,0,95,23,1,0,0,0,96,97,7,4,0,0,97,25,1,0,0,0,98,99,
-        5,42,0,0,99,100,7,1,0,0,100,101,5,48,0,0,101,102,5,48,0,0,102,103,
-        5,48,0,0,103,27,1,0,0,0,104,105,5,43,0,0,105,106,3,30,15,0,106,29,
+        5,42,0,0,99,100,7,1,0,0,100,101,5,49,0,0,101,102,5,49,0,0,102,103,
+        5,49,0,0,103,27,1,0,0,0,104,105,5,43,0,0,105,106,3,30,15,0,106,29,
         1,0,0,0,107,108,7,5,0,0,108,31,1,0,0,0,6,36,49,55,65,76,89
     ]
 
@@ -1014,11 +1014,11 @@ class CommandsParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def NUM_INT(self, i:int=None):
+        def NUM_REAL(self, i:int=None):
             if i is None:
-                return self.getTokens(CommandsParser.NUM_INT)
+                return self.getTokens(CommandsParser.NUM_REAL)
             else:
-                return self.getToken(CommandsParser.NUM_INT, i)
+                return self.getToken(CommandsParser.NUM_REAL, i)
 
         def NAME(self):
             return self.getToken(CommandsParser.NAME, 0)
@@ -1060,11 +1060,11 @@ class CommandsParser ( Parser ):
                 self._errHandler.reportMatch(self)
                 self.consume()
             self.state = 100
-            self.match(CommandsParser.NUM_INT)
+            self.match(CommandsParser.NUM_REAL)
             self.state = 101
-            self.match(CommandsParser.NUM_INT)
+            self.match(CommandsParser.NUM_REAL)
             self.state = 102
-            self.match(CommandsParser.NUM_INT)
+            self.match(CommandsParser.NUM_REAL)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

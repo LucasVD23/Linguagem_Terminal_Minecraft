@@ -1,0 +1,3 @@
+/summon player1 player
+/summon mob1 Creeper
+/give player1 Wooden Sword
