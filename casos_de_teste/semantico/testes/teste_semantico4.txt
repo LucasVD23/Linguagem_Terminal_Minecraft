@@ -1,0 +1,3 @@
+/summon player1 Player
+/summon mob1 Slime
+/give mob1 Iron Sword 3

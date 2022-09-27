@@ -1,0 +1,1 @@
+Exception: Invalid value for gamemode, type 0 for survival, 1  for creative, 2 for adventure or 3 for spectator

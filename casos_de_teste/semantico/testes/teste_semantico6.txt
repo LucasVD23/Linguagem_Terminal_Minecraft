@@ -1,3 +1,4 @@
+/gamemode 9
 /summon mob1 Creeper
 /tp mob1 996 556 33
 
