@@ -1,7 +1,7 @@
 /summon player1 Player
 /summon player2 Player
 /summon mob1 Skeleton
-/give player1 Wooden Sword 3
+/give player3 Wooden Sword 3
 /gamemode 2
 /weather clear
 /time set day

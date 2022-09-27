@@ -2,6 +2,9 @@ from antlr4 import *
 from EntitiesTable import EntitiesTable,Player,Mob
 from visitorFiles.CommandsParser import CommandsParser
 from visitorFiles.CommandsVisitor import CommandsVisitor
+import sys
+
+sys.tracebacklimit = 0
 
 class Visitor(CommandsVisitor):
     entities_table = EntitiesTable()
