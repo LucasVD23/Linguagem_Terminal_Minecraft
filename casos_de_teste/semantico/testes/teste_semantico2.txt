@@ -1,6 +1,0 @@
-/summon player1 Player
-
-/give player1 Diamond Sword 2
-/give player1 Bow 1
-/give player1 Arrow 45
-

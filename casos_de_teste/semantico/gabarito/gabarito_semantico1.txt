@@ -1,1 +1,0 @@
-Exception: You can't give a negative quantity of items, please type a positive value

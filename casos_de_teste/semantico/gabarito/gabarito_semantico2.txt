@@ -1,1 +1,0 @@
-Exception: Not enough space in Player player1's inventory

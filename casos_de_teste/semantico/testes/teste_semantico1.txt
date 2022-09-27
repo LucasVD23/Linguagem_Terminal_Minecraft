@@ -1,2 +1,0 @@
-/summon player1 Player
-/give player1 Diamond Sword -5
