@@ -90,4 +90,3 @@ Execute o arquivo principal
 ```
  python main.py teste.txt
 ```
-

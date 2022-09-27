@@ -106,7 +106,7 @@ class CodeGenerator(CommandsVisitor):
         
     def visitTp(self, ctx: CommandsParser.TpContext):
         player = ctx.NAME().getText()
-        positions = ctx.NUM_REAL()
+        positions = ctx.NUM_INT()
         self.saida+= f"print('Teleported {player} to {positions[0].getText()}, {positions[1].getText()}, {positions[2].getText()}')\n"  
         print(f"Teleported {player} to {positions[0].getText()}, {positions[1].getText()}, {positions[2].getText()}")
         return None
