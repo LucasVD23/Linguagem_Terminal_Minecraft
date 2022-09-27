@@ -29,10 +29,10 @@ def main(argv):
             
         gerador = CodeGenerator()
         gerador.visitProgram(tree)
-        print('Fim da Compilação')
         generated_file = open('generated_file.py', 'w')
         generated_file.write(gerador.saida)
         generated_file.close()
+        print('Fim da Compilação')
 
 
 
