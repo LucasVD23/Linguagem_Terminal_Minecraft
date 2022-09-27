@@ -10,41 +10,38 @@ else:
 
 def serializedATN():
     return [
-        4,1,52,110,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,52,105,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
-        2,14,7,14,2,15,7,15,1,0,1,0,5,0,35,8,0,10,0,12,0,38,9,0,1,0,1,0,
-        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,50,8,1,1,2,1,2,1,2,1,2,3,2,56,
-        8,2,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,5,3,5,66,8,5,1,5,1,5,1,5,1,5,1,
-        5,1,5,1,5,1,5,1,5,3,5,77,8,5,1,6,1,6,1,7,1,7,1,7,1,8,1,8,1,8,1,9,
-        1,9,1,9,3,9,90,8,9,1,10,1,10,1,11,1,11,1,11,1,12,1,12,1,13,1,13,
-        1,13,1,13,1,13,1,13,1,14,1,14,1,14,1,15,1,15,1,15,0,0,16,0,2,4,6,
-        8,10,12,14,16,18,20,22,24,26,28,30,0,6,1,0,4,9,2,0,11,11,50,50,1,
-        0,21,25,1,0,29,36,1,0,38,41,1,0,44,47,112,0,36,1,0,0,0,2,49,1,0,
-        0,0,4,51,1,0,0,0,6,57,1,0,0,0,8,59,1,0,0,0,10,76,1,0,0,0,12,78,1,
-        0,0,0,14,80,1,0,0,0,16,83,1,0,0,0,18,86,1,0,0,0,20,91,1,0,0,0,22,
-        93,1,0,0,0,24,96,1,0,0,0,26,98,1,0,0,0,28,104,1,0,0,0,30,107,1,0,
-        0,0,32,33,5,1,0,0,33,35,3,2,1,0,34,32,1,0,0,0,35,38,1,0,0,0,36,34,
-        1,0,0,0,36,37,1,0,0,0,37,39,1,0,0,0,38,36,1,0,0,0,39,40,5,0,0,1,
-        40,1,1,0,0,0,41,50,3,4,2,0,42,50,3,8,4,0,43,50,3,14,7,0,44,50,3,
-        16,8,0,45,50,3,18,9,0,46,50,3,22,11,0,47,50,3,26,13,0,48,50,3,28,
-        14,0,49,41,1,0,0,0,49,42,1,0,0,0,49,43,1,0,0,0,49,44,1,0,0,0,49,
-        45,1,0,0,0,49,46,1,0,0,0,49,47,1,0,0,0,49,48,1,0,0,0,50,3,1,0,0,
-        0,51,52,5,2,0,0,52,55,5,50,0,0,53,56,3,6,3,0,54,56,5,3,0,0,55,53,
-        1,0,0,0,55,54,1,0,0,0,56,5,1,0,0,0,57,58,7,0,0,0,58,7,1,0,0,0,59,
-        60,5,10,0,0,60,61,7,1,0,0,61,62,3,10,5,0,62,63,5,48,0,0,63,9,1,0,
-        0,0,64,66,3,12,6,0,65,64,1,0,0,0,65,66,1,0,0,0,66,67,1,0,0,0,67,
-        77,5,12,0,0,68,77,5,13,0,0,69,77,5,14,0,0,70,77,5,15,0,0,71,77,5,
-        16,0,0,72,77,5,17,0,0,73,77,5,18,0,0,74,77,5,19,0,0,75,77,5,20,0,
-        0,76,65,1,0,0,0,76,68,1,0,0,0,76,69,1,0,0,0,76,70,1,0,0,0,76,71,
-        1,0,0,0,76,72,1,0,0,0,76,73,1,0,0,0,76,74,1,0,0,0,76,75,1,0,0,0,
-        77,11,1,0,0,0,78,79,7,2,0,0,79,13,1,0,0,0,80,81,5,26,0,0,81,82,5,
-        50,0,0,82,15,1,0,0,0,83,84,5,27,0,0,84,85,5,48,0,0,85,17,1,0,0,0,
-        86,89,5,28,0,0,87,90,3,20,10,0,88,90,5,48,0,0,89,87,1,0,0,0,89,88,
-        1,0,0,0,90,19,1,0,0,0,91,92,7,3,0,0,92,21,1,0,0,0,93,94,5,37,0,0,
-        94,95,3,24,12,0,95,23,1,0,0,0,96,97,7,4,0,0,97,25,1,0,0,0,98,99,
-        5,42,0,0,99,100,7,1,0,0,100,101,5,48,0,0,101,102,5,48,0,0,102,103,
-        5,48,0,0,103,27,1,0,0,0,104,105,5,43,0,0,105,106,3,30,15,0,106,29,
-        1,0,0,0,107,108,7,5,0,0,108,31,1,0,0,0,6,36,49,55,65,76,89
+        2,14,7,14,2,15,7,15,2,16,7,16,1,0,1,0,5,0,37,8,0,10,0,12,0,40,9,
+        0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,52,8,1,1,2,1,2,1,2,
+        1,2,3,2,58,8,2,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,5,3,5,68,8,5,1,5,1,
+        5,1,6,1,6,1,7,1,7,1,8,1,8,1,8,1,9,1,9,1,9,1,10,1,10,1,10,3,10,85,
+        8,10,1,11,1,11,1,12,1,12,1,12,1,13,1,13,1,14,1,14,1,14,1,14,1,14,
+        1,14,1,15,1,15,1,15,1,16,1,16,1,16,0,0,17,0,2,4,6,8,10,12,14,16,
+        18,20,22,24,26,28,30,32,0,7,1,0,4,9,2,0,11,11,50,50,1,0,12,16,1,
+        0,17,25,1,0,29,36,1,0,38,41,1,0,44,47,98,0,38,1,0,0,0,2,51,1,0,0,
+        0,4,53,1,0,0,0,6,59,1,0,0,0,8,61,1,0,0,0,10,67,1,0,0,0,12,71,1,0,
+        0,0,14,73,1,0,0,0,16,75,1,0,0,0,18,78,1,0,0,0,20,81,1,0,0,0,22,86,
+        1,0,0,0,24,88,1,0,0,0,26,91,1,0,0,0,28,93,1,0,0,0,30,99,1,0,0,0,
+        32,102,1,0,0,0,34,35,5,1,0,0,35,37,3,2,1,0,36,34,1,0,0,0,37,40,1,
+        0,0,0,38,36,1,0,0,0,38,39,1,0,0,0,39,41,1,0,0,0,40,38,1,0,0,0,41,
+        42,5,0,0,1,42,1,1,0,0,0,43,52,3,4,2,0,44,52,3,8,4,0,45,52,3,16,8,
+        0,46,52,3,18,9,0,47,52,3,20,10,0,48,52,3,24,12,0,49,52,3,28,14,0,
+        50,52,3,30,15,0,51,43,1,0,0,0,51,44,1,0,0,0,51,45,1,0,0,0,51,46,
+        1,0,0,0,51,47,1,0,0,0,51,48,1,0,0,0,51,49,1,0,0,0,51,50,1,0,0,0,
+        52,3,1,0,0,0,53,54,5,2,0,0,54,57,5,50,0,0,55,58,3,6,3,0,56,58,5,
+        3,0,0,57,55,1,0,0,0,57,56,1,0,0,0,58,5,1,0,0,0,59,60,7,0,0,0,60,
+        7,1,0,0,0,61,62,5,10,0,0,62,63,7,1,0,0,63,64,3,10,5,0,64,65,5,48,
+        0,0,65,9,1,0,0,0,66,68,3,12,6,0,67,66,1,0,0,0,67,68,1,0,0,0,68,69,
+        1,0,0,0,69,70,3,14,7,0,70,11,1,0,0,0,71,72,7,2,0,0,72,13,1,0,0,0,
+        73,74,7,3,0,0,74,15,1,0,0,0,75,76,5,26,0,0,76,77,5,50,0,0,77,17,
+        1,0,0,0,78,79,5,27,0,0,79,80,5,48,0,0,80,19,1,0,0,0,81,84,5,28,0,
+        0,82,85,3,22,11,0,83,85,5,48,0,0,84,82,1,0,0,0,84,83,1,0,0,0,85,
+        21,1,0,0,0,86,87,7,4,0,0,87,23,1,0,0,0,88,89,5,37,0,0,89,90,3,26,
+        13,0,90,25,1,0,0,0,91,92,7,5,0,0,92,27,1,0,0,0,93,94,5,42,0,0,94,
+        95,7,1,0,0,95,96,5,48,0,0,96,97,5,48,0,0,97,98,5,48,0,0,98,29,1,
+        0,0,0,99,100,5,43,0,0,100,101,3,32,16,0,101,31,1,0,0,0,102,103,7,
+        6,0,0,103,33,1,0,0,0,5,38,51,57,67,84
     ]
 
 class CommandsParser ( Parser ):
@@ -59,10 +56,10 @@ class CommandsParser ( Parser ):
 
     literalNames = [ "<INVALID>", "'/'", "'summon'", "'Player'", "'Creeper'", 
                      "'Skeleton'", "'Spider'", "'Slime'", "'Enderman'", 
-                     "'Zombie'", "'give'", "'@a'", "'Sword'", "'Axe'", "'Pickaxe'", 
-                     "'Bow'", "'Arrow'", "'Helmet'", "'Chestplate'", "'Leggings'", 
-                     "'Boots'", "'Wooden'", "'Stone'", "'Iron'", "'Golden'", 
-                     "'Diamond'", "'kill'", "'gamemode'", "'time set'", 
+                     "'Zombie'", "'give'", "'@a'", "'Wooden'", "'Stone'", 
+                     "'Iron'", "'Golden'", "'Diamond'", "'Sword'", "'Axe'", 
+                     "'Pickaxe'", "'Bow'", "'Arrow'", "'Helmet'", "'Chestplate'", 
+                     "'Leggings'", "'Boots'", "'kill'", "'gamemode'", "'time set'", 
                      "'day'", "'noon'", "'midday'", "'sunset'", "'dusk'", 
                      "'midnight'", "'sunrise'", "'dawn'", "'weather'", "'clear'", 
                      "'rain'", "'snow'", "'thunder'", "'tp'", "'difficulty'", 
@@ -89,19 +86,21 @@ class CommandsParser ( Parser ):
     RULE_give = 4
     RULE_item = 5
     RULE_item_material = 6
-    RULE_kill = 7
-    RULE_gamemode = 8
-    RULE_time_set = 9
-    RULE_time_string = 10
-    RULE_weather = 11
-    RULE_weather_type = 12
-    RULE_tp = 13
-    RULE_difficulty = 14
-    RULE_difficulty_level = 15
+    RULE_item_name = 7
+    RULE_kill = 8
+    RULE_gamemode = 9
+    RULE_time_set = 10
+    RULE_time_string = 11
+    RULE_weather = 12
+    RULE_weather_type = 13
+    RULE_tp = 14
+    RULE_difficulty = 15
+    RULE_difficulty_level = 16
 
     ruleNames =  [ "program", "cmd", "summon", "mob_type", "give", "item", 
-                   "item_material", "kill", "gamemode", "time_set", "time_string", 
-                   "weather", "weather_type", "tp", "difficulty", "difficulty_level" ]
+                   "item_material", "item_name", "kill", "gamemode", "time_set", 
+                   "time_string", "weather", "weather_type", "tp", "difficulty", 
+                   "difficulty_level" ]
 
     EOF = Token.EOF
     T__0=1
@@ -210,19 +209,19 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 36
+            self.state = 38
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==1:
-                self.state = 32
+                self.state = 34
                 self.match(CommandsParser.T__0)
-                self.state = 33
+                self.state = 35
                 self.cmd()
-                self.state = 38
+                self.state = 40
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 39
+            self.state = 41
             self.match(CommandsParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -297,47 +296,47 @@ class CommandsParser ( Parser ):
         localctx = CommandsParser.CmdContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_cmd)
         try:
-            self.state = 49
+            self.state = 51
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [2]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 41
+                self.state = 43
                 self.summon()
                 pass
             elif token in [10]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 42
+                self.state = 44
                 self.give()
                 pass
             elif token in [26]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 43
+                self.state = 45
                 self.kill()
                 pass
             elif token in [27]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 44
+                self.state = 46
                 self.gamemode()
                 pass
             elif token in [28]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 45
+                self.state = 47
                 self.time_set()
                 pass
             elif token in [37]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 46
+                self.state = 48
                 self.weather()
                 pass
             elif token in [42]:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 47
+                self.state = 49
                 self.tp()
                 pass
             elif token in [43]:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 48
+                self.state = 50
                 self.difficulty()
                 pass
             else:
@@ -392,19 +391,19 @@ class CommandsParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_summon)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 51
+            self.state = 53
             self.match(CommandsParser.T__1)
-            self.state = 52
+            self.state = 54
             self.match(CommandsParser.NAME)
-            self.state = 55
+            self.state = 57
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [4, 5, 6, 7, 8, 9]:
-                self.state = 53
+                self.state = 55
                 self.mob_type()
                 pass
             elif token in [3]:
-                self.state = 54
+                self.state = 56
                 self.match(CommandsParser.T__2)
                 pass
             else:
@@ -454,7 +453,7 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 57
+            self.state = 59
             _la = self._input.LA(1)
             if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 1008) != 0):
                 self._errHandler.recoverInline(self)
@@ -514,18 +513,18 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 59
+            self.state = 61
             self.match(CommandsParser.T__9)
-            self.state = 60
+            self.state = 62
             _la = self._input.LA(1)
             if not(_la==11 or _la==50):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
-            self.state = 61
+            self.state = 63
             self.item()
-            self.state = 62
+            self.state = 64
             self.match(CommandsParser.NUM_INT)
         except RecognitionException as re:
             localctx.exception = re
@@ -542,6 +541,10 @@ class CommandsParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def item_name(self):
+            return self.getTypedRuleContext(CommandsParser.Item_nameContext,0)
+
 
         def item_material(self):
             return self.getTypedRuleContext(CommandsParser.Item_materialContext,0)
@@ -573,65 +576,17 @@ class CommandsParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_item)
         self._la = 0 # Token type
         try:
-            self.state = 76
+            self.enterOuterAlt(localctx, 1)
+            self.state = 67
             self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [12, 21, 22, 23, 24, 25]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 65
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 65011712) != 0:
-                    self.state = 64
-                    self.item_material()
+            _la = self._input.LA(1)
+            if ((_la) & ~0x3f) == 0 and ((1 << _la) & 126976) != 0:
+                self.state = 66
+                self.item_material()
 
 
-                self.state = 67
-                self.match(CommandsParser.T__11)
-                pass
-            elif token in [13]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 68
-                self.match(CommandsParser.T__12)
-                pass
-            elif token in [14]:
-                self.enterOuterAlt(localctx, 3)
-                self.state = 69
-                self.match(CommandsParser.T__13)
-                pass
-            elif token in [15]:
-                self.enterOuterAlt(localctx, 4)
-                self.state = 70
-                self.match(CommandsParser.T__14)
-                pass
-            elif token in [16]:
-                self.enterOuterAlt(localctx, 5)
-                self.state = 71
-                self.match(CommandsParser.T__15)
-                pass
-            elif token in [17]:
-                self.enterOuterAlt(localctx, 6)
-                self.state = 72
-                self.match(CommandsParser.T__16)
-                pass
-            elif token in [18]:
-                self.enterOuterAlt(localctx, 7)
-                self.state = 73
-                self.match(CommandsParser.T__17)
-                pass
-            elif token in [19]:
-                self.enterOuterAlt(localctx, 8)
-                self.state = 74
-                self.match(CommandsParser.T__18)
-                pass
-            elif token in [20]:
-                self.enterOuterAlt(localctx, 9)
-                self.state = 75
-                self.match(CommandsParser.T__19)
-                pass
-            else:
-                raise NoViableAltException(self)
-
+            self.state = 69
+            self.item_name()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -676,9 +631,60 @@ class CommandsParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 78
+            self.state = 71
             _la = self._input.LA(1)
-            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 65011712) != 0):
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 126976) != 0):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Item_nameContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return CommandsParser.RULE_item_name
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterItem_name" ):
+                listener.enterItem_name(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitItem_name" ):
+                listener.exitItem_name(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitItem_name" ):
+                return visitor.visitItem_name(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def item_name(self):
+
+        localctx = CommandsParser.Item_nameContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 14, self.RULE_item_name)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 73
+            _la = self._input.LA(1)
+            if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 66977792) != 0):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -725,12 +731,12 @@ class CommandsParser ( Parser ):
     def kill(self):
 
         localctx = CommandsParser.KillContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_kill)
+        self.enterRule(localctx, 16, self.RULE_kill)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 80
+            self.state = 75
             self.match(CommandsParser.T__25)
-            self.state = 81
+            self.state = 76
             self.match(CommandsParser.NAME)
         except RecognitionException as re:
             localctx.exception = re
@@ -774,12 +780,12 @@ class CommandsParser ( Parser ):
     def gamemode(self):
 
         localctx = CommandsParser.GamemodeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_gamemode)
+        self.enterRule(localctx, 18, self.RULE_gamemode)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 83
+            self.state = 78
             self.match(CommandsParser.T__26)
-            self.state = 84
+            self.state = 79
             self.match(CommandsParser.NUM_INT)
         except RecognitionException as re:
             localctx.exception = re
@@ -827,20 +833,20 @@ class CommandsParser ( Parser ):
     def time_set(self):
 
         localctx = CommandsParser.Time_setContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_time_set)
+        self.enterRule(localctx, 20, self.RULE_time_set)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 86
+            self.state = 81
             self.match(CommandsParser.T__27)
-            self.state = 89
+            self.state = 84
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [29, 30, 31, 32, 33, 34, 35, 36]:
-                self.state = 87
+                self.state = 82
                 self.time_string()
                 pass
             elif token in [48]:
-                self.state = 88
+                self.state = 83
                 self.match(CommandsParser.NUM_INT)
                 pass
             else:
@@ -886,11 +892,11 @@ class CommandsParser ( Parser ):
     def time_string(self):
 
         localctx = CommandsParser.Time_stringContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_time_string)
+        self.enterRule(localctx, 22, self.RULE_time_string)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 91
+            self.state = 86
             _la = self._input.LA(1)
             if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 136902082560) != 0):
                 self._errHandler.recoverInline(self)
@@ -940,12 +946,12 @@ class CommandsParser ( Parser ):
     def weather(self):
 
         localctx = CommandsParser.WeatherContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_weather)
+        self.enterRule(localctx, 24, self.RULE_weather)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
+            self.state = 88
             self.match(CommandsParser.T__36)
-            self.state = 94
+            self.state = 89
             self.weather_type()
         except RecognitionException as re:
             localctx.exception = re
@@ -987,11 +993,11 @@ class CommandsParser ( Parser ):
     def weather_type(self):
 
         localctx = CommandsParser.Weather_typeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_weather_type)
+        self.enterRule(localctx, 26, self.RULE_weather_type)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 96
+            self.state = 91
             _la = self._input.LA(1)
             if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 4123168604160) != 0):
                 self._errHandler.recoverInline(self)
@@ -1046,24 +1052,24 @@ class CommandsParser ( Parser ):
     def tp(self):
 
         localctx = CommandsParser.TpContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_tp)
+        self.enterRule(localctx, 28, self.RULE_tp)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 98
+            self.state = 93
             self.match(CommandsParser.T__41)
-            self.state = 99
+            self.state = 94
             _la = self._input.LA(1)
             if not(_la==11 or _la==50):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
-            self.state = 100
+            self.state = 95
             self.match(CommandsParser.NUM_INT)
-            self.state = 101
+            self.state = 96
             self.match(CommandsParser.NUM_INT)
-            self.state = 102
+            self.state = 97
             self.match(CommandsParser.NUM_INT)
         except RecognitionException as re:
             localctx.exception = re
@@ -1108,12 +1114,12 @@ class CommandsParser ( Parser ):
     def difficulty(self):
 
         localctx = CommandsParser.DifficultyContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_difficulty)
+        self.enterRule(localctx, 30, self.RULE_difficulty)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 104
+            self.state = 99
             self.match(CommandsParser.T__42)
-            self.state = 105
+            self.state = 100
             self.difficulty_level()
         except RecognitionException as re:
             localctx.exception = re
@@ -1155,11 +1161,11 @@ class CommandsParser ( Parser ):
     def difficulty_level(self):
 
         localctx = CommandsParser.Difficulty_levelContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_difficulty_level)
+        self.enterRule(localctx, 32, self.RULE_difficulty_level)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 107
+            self.state = 102
             _la = self._input.LA(1)
             if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 263882790666240) != 0):
                 self._errHandler.recoverInline(self)

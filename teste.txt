@@ -1,6 +1,2 @@
 /summon player1 Player
-summon mob1 Creeper
-
-/weather sunny
-/tp player1 2 2  
-/difficulty very hard
+/give player1 Wooden Axe 2

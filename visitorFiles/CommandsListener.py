@@ -71,6 +71,15 @@ class CommandsListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CommandsParser#item_name.
+    def enterItem_name(self, ctx:CommandsParser.Item_nameContext):
+        pass
+
+    # Exit a parse tree produced by CommandsParser#item_name.
+    def exitItem_name(self, ctx:CommandsParser.Item_nameContext):
+        pass
+
+
     # Enter a parse tree produced by CommandsParser#kill.
     def enterKill(self, ctx:CommandsParser.KillContext):
         pass

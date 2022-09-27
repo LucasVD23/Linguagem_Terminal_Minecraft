@@ -25,9 +25,11 @@ mob_type: 'Creeper'|'Skeleton'| 'Spider'| 'Slime' | 'Enderman'| 'Zombie';
 
 give: 'give' ('@a'|NAME) item NUM_INT;
 
-item: item_material? 'Sword'|'Axe'|'Pickaxe'|'Bow'|'Arrow'|'Helmet'|'Chestplate'|'Leggings'|'Boots';
+item: item_material? item_name;
 
 item_material:  'Wooden'| 'Stone' | 'Iron'| 'Golden'| 'Diamond';
+
+item_name: 'Sword'|'Axe'|'Pickaxe'|'Bow'|'Arrow'|'Helmet'|'Chestplate'|'Leggings'|'Boots';
 
 kill: 'kill' NAME;
 

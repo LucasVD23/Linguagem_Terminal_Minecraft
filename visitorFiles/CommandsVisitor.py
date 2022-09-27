@@ -44,6 +44,11 @@ class CommandsVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CommandsParser#item_name.
+    def visitItem_name(self, ctx:CommandsParser.Item_nameContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CommandsParser#kill.
     def visitKill(self, ctx:CommandsParser.KillContext):
         return self.visitChildren(ctx)
