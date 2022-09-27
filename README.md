@@ -17,7 +17,7 @@ Neste trabalho, são implementados os comandos summon,give,kill, gamemode, time 
 
 - Summon invoca Players ou Mobs (inimigos), serve como uma "declaração de variável" para a linguagem. É possível invocar um Player passando seu nome (que deve ser um identificador único) e o tipo Player. Para invocar um Mob, deve-se passar seu nome (também é um identificador único) e o tipo de Mob. Os tipos de Mob disponíveis são: Creeper, Skeleton, Spider, Slime, Enderman e Zombie.
 
-- Give da um item a um Player (dar itens a Mobs não é permitido), para isso, é necessário especificar o nome do Player para quem se quer dar os itens ou utilizar o '@a' para dar o item a todos o Players, também é necessário especificar o item que se quer dar e a quantidade. Os itens disponíveis são: Sword, Axe, Pickaxe, Bow, Arrow, Helmet, Chestplate, Leggings e Boots. Pode-se especificar os tipos  Wooden, Stone, Iron, Golden, Diamond para os itens a serem dados. Estes itens ficaram armazenados no inventário do Player.
+- Give da um item a um Player (dar itens a Mobs não é permitido), para isso, é necessário especificar o nome do Player para quem se quer dar os itens ou utilizar o '@a' para dar o item a todos o Players, também é necessário especificar o item que se quer dar e a quantidade. Os itens disponíveis são: Sword, Axe, Pickaxe, Bow, Arrow, Helmet, Chestplate, Leggings e Boots. Pode-se especificar os tipos  Wooden, Stone, Iron, Golden, Diamond para os itens a serem dados. Estes itens ficaram armazenados no inventário do Player, que possuíra um limite de 41 slots de items .
 
 - Kill elimina um Player ou um Mob. Para utilizar o comando, basta passar como seu parâmetro o nome da entidade a ser eliminada.
 
