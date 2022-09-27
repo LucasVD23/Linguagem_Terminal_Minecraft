@@ -1,9 +1,9 @@
-/summon player1 Player
+/summon player1 player
 /summon mob1 Creeper
 /gamemode 0
-/give player1 Iron Sword 1
+/give player Iron Sword 1
 /kill mob1
-/tp player1 2 2 2
+/tp @a 2 2 2
 /time set day
 /difficulty hard
 /weather rain
