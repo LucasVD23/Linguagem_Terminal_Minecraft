@@ -27,12 +27,13 @@ def main(argv):
         visitor.visit(tree)
 
             
-        print('Fim da Compilação')
+        
         gerador = CodeGenerator()
         gerador.visitProgram(tree)
         generated_file = open('generated_file.py', 'w')
         generated_file.write(gerador.saida)
         generated_file.close()
+        print('Fim da Compilação')
 
 
 
