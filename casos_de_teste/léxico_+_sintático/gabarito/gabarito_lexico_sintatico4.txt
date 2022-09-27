@@ -1,0 +1,10 @@
+Summoned new Player
+Summoned new Creeper
+Your game mode has been updated to Survival Mode
+Given [IronSword] * 1 to player1
+Killed mob1
+Teleported player1 to 2, 2, 2
+Set the time to 1000
+Set game difficulty to hard
+Changing to rain weather
+Fim da Compilação
