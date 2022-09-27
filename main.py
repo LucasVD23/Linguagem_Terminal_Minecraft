@@ -9,31 +9,30 @@ from CodeGenerator import CodeGenerator
 class MyErrorStrategy(BailErrorStrategy):
     def recover(self, recognizer:Parser, e:RecognitionException):
         recognizer._errHandler.reportError(recognizer,e)
-        super().recover(recognizer,e)
+        raise Exception(e)
+    
+
  
 def main(argv):
     input_stream = FileStream(argv[1])
     
-    try:
-        lexer = CommandsLexer(input_stream)
+    lexer = CommandsLexer(input_stream)
         
-        stream = CommonTokenStream(lexer)
-        parser = CommandsParser(stream)
-        parser._errHandler = MyErrorStrategy()
-        tree = parser.program()
+    stream = CommonTokenStream(lexer)
+    parser = CommandsParser(stream)
+    tree = parser.program()
+    visitor = Visitor()
+    visitor.visit(tree)
 
-        visitor = Visitor()
-        visitor.visit(tree)
-
+    if(parser.getNumberOfSyntaxErrors() == 0): 
+            
+        print('Fim da Compilação')
         gerador = CodeGenerator()
         gerador.visitProgram(tree)
-        print('Fim da Compilação')
-        
         generated_file = open('generated_file.py', 'w')
         generated_file.write(gerador.saida)
         generated_file.close()
-    except:
-        pass
+
 
 
 if __name__ == '__main__':
