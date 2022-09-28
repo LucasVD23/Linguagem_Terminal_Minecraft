@@ -81,7 +81,7 @@ Execute o arquivo principal
 
 Alternativamente, você pode instalar definer o antlr4 como um comando. Após instalar o Java, execute os seguintes passos: 
 
-No terminal, execute os comandos descritos na [seção de instalação do site oficia] (https://www.antlr.org/) 
+No terminal, execute os comandos descritos na [seção de instalação do site oficial](https://www.antlr.org/) 
 ```
 $ cd /usr/local/lib
 $ sudo curl -O https://www.antlr.org/download/antlr-4.9.2-complete.jar
