@@ -72,6 +72,7 @@ class MinecraftSemantic(CommandsVisitor):
         return None
     
     def visitKill(self,ctx:CommandsParser.KillContext):
+        #Retira entidade da tabela de símbolos se existir
         name = ctx.NAME().getText()
         self.entities_table.kill_entity(name)
 
