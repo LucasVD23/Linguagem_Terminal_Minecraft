@@ -61,6 +61,39 @@ Instale o arquivo de dependências no ambiente
  pip install -r requirements.txt
 ```
 
+Instale o Java:
+
+```
+sudo apt install default-jdk
+```
+
+Baixe a [versão 4.11.1 do antlr](https://www.antlr.org/download.html)
+
+Compile o arquivo ```Commands.g4```
+```
+ java -jar <caminho para o antlr-4.11.1-complete.jar> -Dlanguage=Python3 Commands.g4 -visitor -o visitorFiles
+```
+
+Execute o arquivo principal
+```
+ python main.py teste.txt
+```
+
+Alternativamente, você pode instalar definer o antlr4 como um comando. Após instalar o Java, execute os seguintes passos: 
+
+No terminal, execute os comandos descritos na seção de instalação do site oficial (link) 
+```
+$ cd /usr/local/lib
+$ sudo curl -O https://www.antlr.org/download/antlr-4.9.2-complete.jar
+$ export CLASSPATH=".:/usr/local/lib/antlr-4.9.2-complete.jar:$CLASSPATH"
+$ alias antlr4='java -jar /usr/local/lib/antlr-4.9.2-complete.jar'
+$ alias grun='java org.antlr.v4.gui.TestRig'
+```
+
+Então, para compilar a gramática Commands.g4:
+```
+antlr4 -Dlanguage=Python3 Commands.g4 -visitor -o dist
+```
 
 ## Windows
 Crie um novo ambiente virtual na raiz do projeto
