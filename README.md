@@ -11,6 +11,8 @@
 
 ## Descrição
 
+Para o vídeo de descrição [clique aqui](https://www.youtube.com/watch?v=nDYnn3Xw2I4)
+
 A linguagem elaborada consiste em uma simulação do terminal do jogo Minecraft, cujos comandos forma adaptados para servir aos própositos da disciplina de compiladores.
 
 Neste trabalho, são implementados os comandos summon,give,kill, gamemode, time set, weather,tp e difficulty. Os comandos devem ser passados em um arquivo como uma lista de comandos. Todo comando deve ser precedido com um '/'.
