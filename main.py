@@ -1,6 +1,6 @@
 import sys
 from antlr4 import *
-from visitor import Visitor
+from MinecraftSemantic import MinecraftSemantic
 from visitorFiles.CommandsLexer import CommandsLexer
 from visitorFiles.CommandsParser import CommandsParser
 from CodeGenerator import CodeGenerator
@@ -23,7 +23,7 @@ def main(argv):
     tree = parser.program()
 
     if(parser.getNumberOfSyntaxErrors() == 0): 
-        visitor = Visitor()
+        visitor = MinecraftSemantic()
         visitor.visit(tree)
 
             

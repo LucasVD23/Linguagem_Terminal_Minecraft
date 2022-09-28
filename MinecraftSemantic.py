@@ -6,8 +6,9 @@ import sys
 
 sys.tracebacklimit = 0
 
-class Visitor(CommandsVisitor):
-    entities_table = EntitiesTable()
+class MinecraftSemantic(CommandsVisitor):
+    entities_table = EntitiesTable()    # Tabela de Símbolos
+    
     def visitProgram(self, ctx: CommandsParser.ProgramContext):
         return self.visitChildren(ctx)
     
@@ -33,6 +34,8 @@ class Visitor(CommandsVisitor):
 
     def visitSummon(self, ctx: CommandsParser.SummonContext):
         name = ctx.NAME().getText()
+        
+        # Verificando se trata-se de uma entidade válida para ser invocada
         if(ctx.mob_type() is not None):
             new_entity = Mob(name)
             self.entities_table.add_entity(new_entity)
@@ -42,16 +45,25 @@ class Visitor(CommandsVisitor):
         return None
 
     def visitGive(self, ctx: CommandsParser.GiveContext):
+        # Verifica quantidade de itens a ser dado ao jogador
         if (int(ctx.NUM_INT().getText()) < 1):
             raise Exception("You can't give a negative quantity of items, please type a positive value")
+        
+        # Verifica se o identificador de jogador não é nulo
         elif(ctx.NAME() is not None):
             name = ctx.NAME().getText()
+            
+            # Verifica existência na tabela de símbolos
             if(not(self.entities_table.verify_entity_exists(name))):
                 raise Exception("Player " + name +  " doesn't exist")
+            
+            # Verifica se a instância em questão se trata de um objeto da classe Player
             elif(isinstance(self.entities_table.entities[name], Player)):
                 self.entities_table.entities[name].add_inventory(int(ctx.NUM_INT().getText()))
             else:
                 raise Exception("You can only give itens to Players")
+            
+        # Verifica se utiliza '@a' para dar itens para todos os jogadores
         elif('@a' in ctx.getText()):
             for entity in self.entities_table.entities:
                 if(isinstance(entity, Player)):
@@ -66,11 +78,13 @@ class Visitor(CommandsVisitor):
         return None
     
     def visitGamemode(self, ctx:CommandsParser.GamemodeContext):
+        # Verificando se o modo de jogo escolhido é válido
         if(int(ctx.NUM_INT().getText()) < 0 or int(ctx.NUM_INT().getText())>3):
             raise Exception('Invalid value for gamemode, type 0 for survival, 1  for creative, 2 for adventure or 3 for spectator')
         return None
     
     def visitTime_set(self, ctx: CommandsParser.Time_setContext):
+        # Verificando se o tempo fornecido é válido
         if(ctx.NUM_INT() is not None):
             num_val = int(ctx.NUM_INT().getText())
             if(num_val > 23000 or num_val < 0):
@@ -78,10 +92,12 @@ class Visitor(CommandsVisitor):
         return None
         
     def visitTp(self, ctx: CommandsParser.TpContext):
+        # Verificando se o identifcador de entidade é válido
         if(ctx.NAME() is not None):
             name = ctx.NAME().getText()
             if(not(self.entities_table.verify_entity_exists(name))):
                 raise Exception("Player " + name + " doesn't exist")
             elif(not(isinstance(self.entities_table.entities[name],Player))):
                 raise Exception("Entity " + name + " is not a player")
+
         return None
