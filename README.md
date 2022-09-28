@@ -32,7 +32,7 @@ Os horários pré-defindos são: day (7:00am ou 10000) , noon/midday (12:00pm ou
 
 - Difficulty muda a dificuldade, as dificuldades disponíveis são: peaceful, easy, normal e hard.
 
-
+As sequências de comandos devem ser passadas a partir de um arquivo txt. Caso os comando passados passem nas verificações léxicas, sintáticas e semânticas, os resultados simulados dos comandos serão impressos no terminal, e será gerado um arquivo Python com o nome generated_file.py que quando executado também imprimirá as saídas esperadas caso estes comandos tivessem sido inseridos no terminal no Minecraft (com as devidas adaptações realizadas para o contexto do trabalho)
 ## Dependências
 
 - Java
