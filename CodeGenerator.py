@@ -3,9 +3,9 @@ from antlr4 import *
 from EntitiesTable import EntitiesTable,Player,Mob
 from visitorFiles.CommandsParser import CommandsParser
 from visitorFiles.CommandsVisitor import CommandsVisitor
-
+#Tabela de entidades para fazer controle de Entidades existente
 entities_table = EntitiesTable()
-
+#Gerados de código faz tanto o print no terminal quanto gera um arquivo python cujos resultados printam as saídas esperadas
 class CodeGenerator(CommandsVisitor):
     saida = ""
     def visitProgram(self, ctx: CommandsParser.ProgramContext):
@@ -56,7 +56,9 @@ class CodeGenerator(CommandsVisitor):
             self.saida += f"players = entities_table.get_all_players()\n"+\
             f"for player in players:\n\t" +\
             f"print('Given [{ctx.item().getText()}] * {ctx.NUM_INT().getText()} to ' + player.name)\n"
+            #array de players existentes na tabela de entidade
             players = entities_table.get_all_players()
+            #Itera sobre todos os players
             for player in players:
                 print(f"Given [{ctx.item().getText()}] * {ctx.NUM_INT().getText()} to "+ player.name)
         else:
