@@ -76,7 +76,7 @@ Compile o arquivo ```Commands.g4```
 
 Execute o arquivo principal
 ```
- python main.py teste.txt
+ python main.py .\casos_de_teste\<tipo_do_caso>\testes\<teste_escolhido>
 ```
 
 Alternativamente, você pode instalar definer o antlr4 como um comando. Após instalar o Java, execute os seguintes passos: 
@@ -121,5 +121,5 @@ Compile o arquivo ```Commands.g4```
 
 Execute o arquivo principal
 ```
- python main.py teste.txt
+ python main.py .\casos_de_teste\<tipo_do_caso>\testes\<teste_escolhido>
 ```
